@@ -1,0 +1,129 @@
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+#navbar {
+    background-color: #001C80;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+#nav-content{
+    background-color: #001C80;
+}
+
+#footer {
+    background-color: #282828;
+}
+
+#uncle-banner{
+    background-color: #001c80;
+}
+
+/* Tab content - closed */
+.tab-content {
+    max-height: 0;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+/* :checked - resize to full height */
+.tab input:checked ~ .tab-content {
+    max-height: 100vh;
+}
+
+/* Label formatting when open */
+.tab input:checked + label{
+/*@apply text-xl p-5 border-l-2 border-indigo-500 bg-gray-100 text-indigo*/
+    /*.text-xl*/
+    /*.p-5*/
+}
+
+/* Icon */
+/* .tab label::after {
+    float:left;
+    top: 0;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+} */
+/* Icon formatting - closed */
+/* .tab input[type=radio] + label::after {
+    content: "+";
+    font-weight:bold; /*.font-bold*/
+} */
+
+/* Icon formatting - open */
+.tab input[type=radio]:checked + label::after {
+    border-radius: 9999px;
+}
+
+
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type="range"]::-webkit-slider-thumb {
+        width: 15px;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        cursor: ew-resize;
+        background: #FFF;
+        box-shadow: -405px 0 0 400px blue;
+        border-radius: 50%;
+    }
+} */
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: blue;
+    cursor: pointer;
+    border-radius: 50%;
+    
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 5px;
+    height: 1px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+/* #footer{
+    justify-content: center;
+    align-items: flex-start;
+} */
+
+/* #easify-web-app{ 
+    position: absolute;
+    width: 836px;
+    height: 441px;
+    left: 179.5px;
+    top: 533px;
+} */
